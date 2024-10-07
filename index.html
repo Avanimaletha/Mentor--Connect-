@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Connect - Connect with Skilled Mentors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#1a202c',
+                        primary: '#4a90e2',
+                        secondary: '#38b2ac',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+    </style>
+</head>
+<body class="font-poppins">
+    <header class="bg-dark shadow-lg">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-primary">Mentor Connect</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-300 hover:text-primary transition duration-300">Home</a>
+                <a href="#" class="text-gray-300 hover:text-primary transition duration-300">Find a Mentor</a>
+                <a href="#" class="text-gray-300 hover:text-primary transition duration-300">How It Works</a>
+                <a href="#" class="text-gray-300 hover:text-primary transition duration-300">About Us</a>
+            </div>
+            <div class="hidden md:block">
+                <a href="#" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">Sign Up</a>
+            </div>
+            <button class="md:hidden text-gray-300 focus:outline-none">
+                <i class="bi bi-list text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero bg-dark text-white py-20">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Connect with Skilled Mentors</h1>
+                    <p class="text-xl mb-8">Unlock your potential with personalized guidance from industry experts.</p>
+                    <a href="#" class="bg-primary text-white px-6 py-3 rounded-md text-lg hover:bg-blue-600 transition duration-300">Get Started</a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://source.unsplash.com/random/600x400?mentoring" alt="Mentoring" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </section>
+
+        <section class="features bg-gray-900 py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Key Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="text-center">
+                        <i class="bi bi-camera-video text-5xl text-primary mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Live Video Conferencing</h3>
+                        <p>Connect with mentors in real-time through our seamless video call feature.</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="bi bi-calendar-check text-5xl text-primary mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Flexible Scheduling</h3>
+                        <p>View mentor availability and book sessions that fit your schedule.</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="bi bi-trophy text-5xl text-primary mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Skilled Mentors</h3>
+                        <p>Browse mentor profiles showcasing their top 3 skills and expertise.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta bg-primary py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-white mb-6">Ready to Start Your Learning Journey?</h2>
+                <p class="text-xl text-white mb-8">Join Mentor Connect today and take the first step towards achieving your goals.</p>
+                <a href="#" class="bg-white text-primary px-6 py-3 rounded-md text-lg font-semibold hover:bg-gray-100 transition duration-300">Find Your Mentor</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-2xl font-bold text-primary">Mentor Connect</a>
+                    <p class="mt-2 text-sm text-gray-400">Empowering learners through expert guidance.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-primary"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-sm text-gray-400">
+                &copy; 2023 Mentor Connect. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
